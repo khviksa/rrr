@@ -19,7 +19,7 @@ namespace практикановый
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+        // Вы можете добавить инициализацию формы здесь
         }
 
         private void button1_Click(object sender, EventArgs e)
