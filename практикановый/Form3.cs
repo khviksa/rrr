@@ -51,7 +51,7 @@ namespace практикановый
                 MessageBox.Show("Код неверный.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private bool CheckKodInDatabase(string kod)
+        private bool CheckKodInDatabase(string kod) //Отсутствие обработки исключений: В методе CheckKodInDatabase стоит добавить блок try-catch, чтобы отлавливать возможные ошибки при работе с базой данных.
         {
             string connectionString = "Server=localhost;Database=sad;User ID=khviksa;Password=Vikavika777!;";
 
