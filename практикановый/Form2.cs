@@ -54,7 +54,7 @@ namespace практикановый
         }
         private bool CheckKodInDatabase(string kod)
         {
-            string connectionString = "Server=localhost;Database=sad;User ID=khviksa;Password=Vikavika777!;";
+            string connectionString = "Server=localhost;Database=sad;User ID=khviksa;Password=Vikavika777!;"; //Повторяющийся код подключения: В методе InitializeConnection и в методе CheckKodInDatabase вы создаете строку подключения. Лучше использовать одну строку подключения, чтобы избежать дублирования.
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
