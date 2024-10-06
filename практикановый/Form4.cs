@@ -18,7 +18,7 @@ namespace практикановый
         {
             InitializeComponent();
             InitializeConnection();
-        }
+        }// Хранение паролей: Пароль не должен храниться в коде. Рассмотрите возможность использования конфигурационного файла или переменных среды для хранения таких данных.
         private MySqlConnection connection;
         private string server = "localhost";
         private string database = "sad";
